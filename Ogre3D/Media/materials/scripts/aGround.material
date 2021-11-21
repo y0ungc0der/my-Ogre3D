@@ -1,0 +1,23 @@
+material Template/texture_blend
+ {
+    technique
+    {
+       pass
+       {
+          texture_unit
+          {
+            texture grass_1024.jpg
+          }
+          texture_unit
+          {
+             texture GreenSkin.jpg
+             colour_op alpha_blend
+          }
+          texture_unit
+          {
+             texture Dirt.jpg
+             colour_op_ex blend_current_alpha src_texture src_current
+          }
+       }
+    }
+ }
